@@ -3,6 +3,8 @@ const sequelize = require('./config/connection');
 
 const app = express();
 
+const User = require('./models/User');
+
 const PORT = process.env.PORT || 3001;
 
 //middleware
