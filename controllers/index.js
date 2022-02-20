@@ -2,6 +2,7 @@ const router = require('express').Router();
 
 const User = require('../models/User');
 
+
 router.get('/', (req, res) => {
     User.findAll().then((data) => {
         res.json(data);

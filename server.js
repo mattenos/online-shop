@@ -5,8 +5,7 @@ const path = require('path');
 
 const app = express();
 
-// const User = require('./models/User');
-
+const User = require('./models/User');
 
 const PORT = process.env.PORT || 3001;
 
