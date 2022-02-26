@@ -1,18 +1,14 @@
 const router = require('express').Router();
 
-const User = require('../models/User');
+// const User = require('../models/User');
 
 
+// localhost:3001/api/
 router.get('/', (req, res) => {
-    User.findAll().then((data) => {
-        res.json(data);
-    })
+	User.findAll().then((data) => {
+        console.log('im here');
+		res.json(data);
+	});
 });
 
-//post data to the User table.
-router.post('/user', (req, res) => {
-    User.create({
-
-    })
-})
 module.exports = router;
