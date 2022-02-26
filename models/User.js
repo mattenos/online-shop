@@ -1,9 +1,6 @@
 // import Model and DataTypes from sequelize
 const { Model, DataTypes } = require('sequelize');
 
-// import bcrypt for password hashing
-const bcrypt = require('bcrypt');
-
 // import database connection from config/connection.js
 const sequelize = require('../config/connection');
 
